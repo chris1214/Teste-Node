@@ -1,0 +1,15 @@
+// parseInt = transforma qualquer coisa digitada pelo usuario em um type number porem caso o usuario digite um texto dara o erro not number.
+// prompt = retorna um valor digitado pelo usuário
+// function [nome da função] ( [atributo] ) { [logica] }
+// return = retorna um valor ou um atributo de uma função
+// uma função deve sempre estar no inicio ou acima do codigo que esta chamando ela.
+// é recomendado que uma função fique sempre no inicio do seu codigo de Scripts
+// quando você deseja concatenar uma string com um number você deve colocar o number entre '()', se não a leitura do codigo sera executada somente como um Scring assim fazendo com que o type number fique concatenado como string[
+// Math.random() gera um numero aleatorio .
+// Math.random() * 10 gera um nemero aleatorio com 2 casas decimais.
+// Math.round() arredonda um numero.
+// Math.round(Math.random() * 10) arredonda um numero decimal.
+// While repete uma condição ate que ela seja True.
+// break quebra um loopin forçando ele a parar.
+// document.querySelector ([Valor a ser pego]) = esse comando pega qualquer elemento que estejá no DOM do seu projeto.
+// push = [array].push([valor a ser add]) push adiciona um objeto para dentro de um array.

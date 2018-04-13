@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+</head>
+<script>
+    function pulalinha(){
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+    function recebe(valor) {
+       return parseInt(prompt(valor));
+    }
+
+    var tabuada = recebe("Qual tabuada você deseja ver?");
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1){
+        var resultado = tabuada * multiplicador;
+        escreve(tabuada + " X " + multiplicador + " = " + resultado);
+    }
+</script>
+<body>
+
+</body>
+</html>

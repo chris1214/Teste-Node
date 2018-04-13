@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivinhe o Segredo</title>
+</head>
+
+<body>
+<div>
+    <input type="text" placeholder="Digite seu chute" id="chute"/>
+    <button id="chutar">Chutar</button>
+</div>
+</body>
+</html>
+<script>
+    function selector(valor) {
+        return document.querySelector(valor);
+    }
+    function recebe(valor) {
+        return parseInt(prompt(valor));
+    }
+
+    function aleatorio(quantidade){
+        return Math.round(Math.random() * quantidade);
+
+    }
+
+    var tentativas = recebe("Quantidade de tentativas");
+    var quantidadeDeCasas = recebe("Quantidade de casas");
+    var segredos = [];
+
+    for (var posicao = 1; posicao <= tentativas; posicao++){
+        var addSegredo = aleatorio(quantidadeDeCasas);
+        segredos.push(addSegredo);
+    }
+
+    console.log("Quantidade de tentativas " + segredos);
+    var input = selector('#chute');
+    input.focus();
+    var achei = false;
+    function compare() {
+
+        console.log("segredos " + segredos);
+        for (var posicao = 0; posicao <= segredos.length; posicao++){
+            if (input.value == segredos[posicao]){
+                alert("Você ACERTOU!");
+                achei = true;
+                break
+            }
+        }
+        if (achei == false){
+            alert('vc ERROU!')
+        }
+        input.value = '';
+        input.focus();
+    }
+    var chutar = document.querySelector("#chutar");
+    chutar.onclick = compare;
+</script>

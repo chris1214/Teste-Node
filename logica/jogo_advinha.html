@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo advinha</title>
+</head>
+<script>
+    function pulalinha(){
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+    function imc(peso, altura) {
+        var calculaIMC = peso / (altura * altura);
+        return calculaIMC;
+    }
+    function recebe(valor) {
+       return parseInt(prompt(valor));
+    }
+
+    var numero = Math.round(Math.random() * 10);
+    console.log(numero);
+    var tentativa = 1;
+    while (tentativa <= 3){
+        var chute = recebe("Digite seu chute");
+
+        if (chute == numero){
+            escreve("Você ACERTOU, o número pensado éra " + numero);
+            break
+        } else {
+            escreve("Lamento mas você ERROU!");
+        }
+        tentativa++
+    }
+</script>
+<body>
+
+</body>
+</html>

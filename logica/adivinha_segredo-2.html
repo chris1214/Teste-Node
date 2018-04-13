@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivinhe o Segredo</title>
+</head>
+
+<body>
+<div>
+    <input type="text" placeholder="Digite seu chute" id="chute"/>
+    <button id="chutar">Chutar</button>
+</div>
+</body>
+</html>
+<script>
+    function selector(valor) {
+        return document.querySelector(valor);
+    }
+    var input = selector('#chute');
+    input.focus();
+    function compare() {
+        var segredo1 = Math.round(Math.random() * 10);
+        var segredo2 = Math.round(Math.random() * 10);
+        var segredo3 = Math.round(Math.random() * 10);
+        console.log("segredo 1 " + segredo1);
+        console.log("segredo 2 " + segredo2);
+        console.log("segredo 3 " + segredo3);
+        if (input.value == segredo1 || input.value == segredo2 || input.value == segredo3){
+            alert("Você acertou")
+        } else {
+            alert("Você errou!")
+        }
+        input.value = '';
+        input.focus();
+    }
+    var chutar = document.querySelector("#chutar");
+    chutar.onclick = compare;
+</script>

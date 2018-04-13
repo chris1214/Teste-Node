@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrela</title>
+</head>
+<script>
+    function pulalinha() {
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+    function recebe(valor) {
+        return parseInt(prompt(valor));
+    }
+    var linhas = recebe("Quantas linhas você deseja imprimir?");
+    var colunas = recebe("Quantas colunas você deseja imprimir?");
+    for (var linha = 1; linha <= linhas; linha++){
+        for (var coluna = 1; coluna <= colunas; coluna++){
+            document.write("*");
+        }
+        pulalinha();
+    }
+</script>
+<body>
+
+</body>
+</html>

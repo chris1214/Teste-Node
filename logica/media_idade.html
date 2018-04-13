@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media das idades</title>
+</head>
+<script>
+    function pulalinha() {
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+    function recebe(valor) {
+        return parseInt(prompt(valor));
+    }
+    var familiares = recebe("São quantos familiares?");
+    var totalIdades = 0;
+    var perguntas = 1;
+    while (perguntas <= familiares) {
+        var idade = recebe("Idade do " + perguntas + "Familiar");
+        totalIdades = totalIdades + idade;
+        perguntas++
+    }
+    var media = totalIdades/familiares;
+    escreve("A media de idades é " + media);
+</script>
+<body>
+
+</body>
+</html>

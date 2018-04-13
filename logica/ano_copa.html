@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ano copa</title>
+</head>
+<script>
+    function pulalinha(){
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+    function recebe(valor) {
+       return parseInt(prompt(valor));
+    }
+    var anoCopa = recebe("Em que ano teve copa?");
+    escreve(anoCopa);
+    var limite = recebe("Digite um ano limite");
+    while(anoCopa <= limite){
+        escreve(anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+</script>
+<body>
+
+</body>
+</html>

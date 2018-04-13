@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Futebol</title>
+</head>
+<script>
+    function pulalinha(){
+        document.write("<br>")
+    }
+    function escreve(valor) {
+        document.write(valor);
+        pulalinha();
+    }
+
+    var vitorias = parseInt(prompt("Qual a quantidade de vitórias do seu time?"));
+    var empates = parseInt(prompt("Qual a quantidade de empates do seu time?"));
+
+    var pontos = (vitorias * 3) + empates;
+
+    if (pontos > 28 ){
+        escreve("Seu time está melhor do que no ano passado");
+        escreve("e sua quantidade de pontos é " + pontos);
+    } else if (pontos < 28) {
+        escreve("Seu time está pior do que no ano passado");
+        escreve("e sua quantidade de pontos é " + pontos);
+    } else if (pontos == 28){
+        escreve("Seu time está igual ao ano passado");
+        escreve("e sua quantidade de pontos é " + pontos);
+    }
+
+</script>
+<body>
+
+</body>
+</html>
