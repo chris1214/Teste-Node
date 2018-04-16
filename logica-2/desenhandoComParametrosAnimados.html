@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animaçoes com parametros</title>
+</head>
+<body>
+<canvas width="400" height="600"></canvas>
+</body>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0,0, 600, 400);
+
+    function desenha(x, y, raio,) {
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x,y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela() {
+        pincel.clearRect(0,0,600,400);
+    }
+    var x = 20;
+     function animacao() {
+         limpaTela();
+         desenha(x,20,10);
+         x++
+     }
+
+     setInterval(animacao, 20);
+</script>
+</html>

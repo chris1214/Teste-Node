@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadrados Verdes</title>
+</head>
+<body>
+<canvas width="600" height="400"></canvas>
+</body>
+<script>
+    function quadrados(x,y,cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x,y,50,50);
+        pincel.fillStrock = 'black';
+        pincel.fillRect(x,y,50,50);
+    }
+
+    quadrados(0,0,'red');
+    quadrados(50,50,'blue');
+    quadrados(100,100,'green');
+    quadrados(150,150,'yellow');
+</script>
+</html>
