@@ -18,6 +18,7 @@
 <main>
     <section class="container">
         <h2 id="titulo-form">Adicionar novo paciente</h2>
+        <ul id="mensagem-error"></ul>
         <form id="form">
             <div class="grupo">
                 <label for="nome">Nome:</label>
@@ -35,9 +36,8 @@
                 <label for="gordura">% de Gordura:</label>
                 <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
             </div>
-
-            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
         </form>
+        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
     </section>
     <section class="container">
         <h2>Meus pacientes</h2>
@@ -54,7 +54,7 @@
             <tbody id="tabela-pacientes">
             <tr class="paciente">
                 <td class="info-nome">Paulo</td>
-                <td class="info-peso">100</td>
+                <td class="info-peso">1000</td>
                 <td class="info-altura">2.00</td>
                 <td class="info-gordura">10</td>
                 <td class="info-imc">0</td>
@@ -98,4 +98,7 @@
 
 </body>
 <script src="./js/principal.js"></script>
+<script src="./js/createNewItem.js"></script>
+<script src="./js/calculaIMC.js"></script>
+<script src="./js/remove.js"></script>
 </html>
