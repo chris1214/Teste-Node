@@ -1,0 +1,23 @@
+.myForm{
+    display: inline-flex;
+}
+.myForm div {
+    display: grid;
+    margin-right: 10px;
+}
+.table {
+    width: 100%
+}
+.livros {
+    text-align: center
+}
+.vencido {
+    color: red;
+}
+.flex {
+    display: inline-flex;
+}
+.grid {
+    display: grid;
+    margin-right: 10px;
+}

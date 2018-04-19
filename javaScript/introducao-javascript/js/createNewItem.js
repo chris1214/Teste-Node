@@ -49,13 +49,6 @@ function addElementInTR(myTR, myPacietes) {
     return table.appendChild(myTR.tr);
 }
 
-function clearForm() {
-    form.nome.value = "";
-    form.peso.value = "";
-    form.altura.value = "";
-    form.gordura.value = "";
-}
-
 function add(){
     var form = document.querySelector("#form");
 

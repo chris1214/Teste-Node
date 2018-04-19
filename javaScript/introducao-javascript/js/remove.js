@@ -7,5 +7,8 @@ table.addEventListener("dblclick", function (event) {
     var alvo = event.target;
     var pai = alvo.parentNode;
 
-    pai.remove();
+    pai.classList.add('fadeOute');
+    setTimeout(function () {
+        pai.remove();
+    }, 500)
 });

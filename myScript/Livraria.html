@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraria</title>
+    <link rel="stylesheet" href="./css/myCss.css">
+</head>
+<body>
+<div>
+    <h1>Livraria</h1>
+    <br>
+    <section>
+        <form action="" class="myForm">
+            <div>
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="livro">Livro</label>
+                <input type="text" name="livro" id="livro">
+            </div>
+            <div>
+                <label for="altor">Altor</label>
+                <input type="text" name="altor" id="altor">
+            </div>
+            <div>
+                <label for="dias">Quantos dias para devolver?</label>
+                <input type="text" name="dias" id="dias">
+            </div>
+        </form>
+        <div class="flex">
+            <button class="grid" id="add">Adicionar</button>
+        </div>
+    </section>
+    <section>
+        <h2 style="text-align: center; margin-top: 10px">Livros emprestados</h2>
+        <table class="table" border="1px">
+            <thead>
+            <tr>
+                <th>Pessoa</th>
+                <th>Livro</th>
+                <th>Altor</th>
+                <th>Data de devolução</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            <tr class="livros">
+                <td>Christopher</td>
+                <td>Mitologia Nordica</td>
+                <td>Neil Gaiman</td>
+                <td class="data">30/4/2018</td>
+            </tr>
+            <tr class="livros">
+                <td>Christopher</td>
+                <td>Rowan, O Guardião</td>
+                <td>Emily Rodda</td>
+                <td class="data">18/4/2018</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+<script src="./js/prazo.js"></script>
+<script src="./js/livros.js"></script>
+<script src="./js/principal.js"></script>
+</html>
