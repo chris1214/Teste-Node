@@ -54,14 +54,17 @@ function add(){
 
     var myPacietes = myForm(form);
 
+    fullCreate(myPacietes);
+}
+function fullCreate(pacientes) {
     var myTR = createTr();
 
-    var peso = myPacietes.peso;
-    var altura = myPacietes.altura;
+    var peso = pacientes.peso;
+    var altura = pacientes.altura;
     var error = myTR.tr;
     var mesagem = validaFormulario(peso, altura, error);
     if (!mesagem.length > 0){
-        addElementInTR(myTR, myPacietes);
+        addElementInTR(myTR, pacientes);
     }
 
     form.reset();
